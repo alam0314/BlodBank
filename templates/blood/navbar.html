@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+    .ball {
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    from {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    to {
+        -webkit-transform: translateY(5px);
+        transform: translateY(50%);
+    }
+}
+.navbar{
+    background-color: #00faf6d4;
+    
+}
+
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <a style="color:#ff0a0a;" class="navbar-brand" href="/"><i class="fas fa-tint ball" style="color: #ff0a0a;"></i>&nbsp;<font face = "Comic sans MS" size ="4"><b>The Blood Bank</b></font></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-bars" style="color: #ff0a0a;"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-link" style="color: #ff0a0a;" href="/"><i class="fas fa-home"></i>&nbsp; <b>Home</b></a></i></a>
+          <a class="nav-link" style="color: #ff0a0a;" href="/patient/patientlogin"><i class="fas fa-procedures"></i>&nbsp; <b>Patient</b></i></a>
+          <a class="nav-link" style="color: #ff0a0a;" href="/donor/donorlogin"><i class="fas fa-user"></i>&nbsp;<b> Donor</b></i></a>
+          <a class="nav-link" style="color: #ff0a0a;" href="/adminlogin"><i class="fas fa-user-shield"></i>&nbsp;<b> Admin</b></i></a>
+        </div>
+    </div>
+</nav>  
+</body>
+
+</html>
